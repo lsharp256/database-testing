@@ -1,3 +1,8 @@
+# This test uses a fixture to establish a connection to the psql database, 
+# which is then passed to the two test functions as an argument. 
+# The first test function verifies that the connection to the database is open, 
+# while the second test function runs a query on the database and verifies that 
+# the query returns at least one row of data.
 import pytest
 import psycopg2
 
